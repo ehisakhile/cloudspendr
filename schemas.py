@@ -1,15 +1,16 @@
-# Project_Root/schemas.py
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from typing import Optional
 
 class UserBase(BaseModel):
     email: EmailStr
+    username: str
     first_name: Optional[str] = None
     last_name: Optional[str] = None
 
 class UserCreate(UserBase):
-    password: str
+    password: str   
+    username: str
 
 class UserUpdate(BaseModel):
     first_name: Optional[str] = None
