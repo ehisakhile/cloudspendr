@@ -1,9 +1,7 @@
 venv
-.env/
 .vscode/
 venv/
 .venv/
-env/
 
 # Byte-code files
 *.pyc
@@ -14,5 +12,5 @@ __pycache__/
 .idea/   # PyCharm specific settings
 
 # Environment variables
-.env
-*.env
+cloudspendr-venv
+.gitignore
