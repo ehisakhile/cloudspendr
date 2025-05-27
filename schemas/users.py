@@ -2,6 +2,9 @@ from pydantic import BaseModel, EmailStr
 from datetime import datetime
 from typing import Optional
 
+class UserTodo(BaseModel):
+    todo: str
+
 class UserBase(BaseModel):
     email: EmailStr
     username: str
@@ -26,4 +29,4 @@ class User(UserBase):
     updated_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
