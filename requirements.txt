@@ -1,2 +1,13 @@
+bcrypt
+email_validator
 fastapi
+httpx
+itsdangerous
+Jinja2
+mysql-connector-python
+passlib
+pydantic
+sqlalchemy
 uvicorn
+dotenv
+pymysql

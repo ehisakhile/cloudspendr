@@ -1,0 +1,16 @@
+venv
+.vscode/
+venv/
+.venv/
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Editor specific files
+.vscode/ # VS Code specific settings (optional, if you don't want to share them)
+.idea/   # PyCharm specific settings
+
+# Environment variables
+cloudspendr-venv
+.gitignore
